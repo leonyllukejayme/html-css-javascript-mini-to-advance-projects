@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.head{
+    background-size: cover;
+    object-fit: cover;
+    opacity: 0.9;
+    background-position: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.block{
+    width: 300px;
+    height: 480px;
+    border: 2px solid transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-image: url(2.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow:
+        4.4px 3.9px 2.2px rgba(0, 0, 0, 0.022),
+        10.6px 9.4px 5.3px rgba(0, 0, 0, 0.032),
+        19.9px 17.7px 10px rgba(0, 0, 0, 0.04),
+        35.5px 31.5px 17.9px rgba(0, 0, 0, 0.048),
+        66.4px 58.9px 33.4px rgba(0, 0, 0, 0.058),
+        159px 141px 80px rgba(0, 0, 0, 0.08)
+        ;
+}
+
+.block .box{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    align-items: center;
+    text-align: center;
+}
+
+.block .box .heading{
+    color: #000;
+    border: 2px solid transparent;
+    background: white;
+    text-align: justify;
+    font-size: 0.8em;
+    padding: 5px 10px;
+    width: 34%;
+    font-weight: bolder;
+}
+
+.block .box .user, .password{
+    padding-top: 20px;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+.block .box .user input[type = "text"], .block .box .password input[type = "password"]{
+    overflow: hidden;
+    background: none;
+    border-style: none;
+    outline: none;
+    color: white;
+    font-size: 0.9em;
+    padding: 0.25px;
+}
+
+.block .box .user input[type = "text"]::placeholder, .block .box .password input[type = "password"]::placeholder{
+    color: white;
+}
+
+.block .box .button{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.block .box .button .submit button{
+    padding: 8px 0;
+    margin: 0;
+    background: none;
+    outline: none;
+    overflow: hidden;
+    width: 100%;
+    border-style: none;
+    box-sizing: border-box;
+}
+
+.block .box .button .submit button a{
+    color: #222;
+    background: #fff;
+    text-decoration: none;
+    padding: 10px 62px;
+    border: 1px solid transparent;
+    outline: none;
+    font-style: 1em;
+    font-weight: bold;
+    width: 100%;
+}
+
+.block .box .button .submit button a:hover{
+    background: #0f1115;
+    color:#fff;
+}
+.block .box .or{
+    color: white;
+    font-style: 0.8em;
+    font-style: italic;
+    padding: 5px 0;
+}
